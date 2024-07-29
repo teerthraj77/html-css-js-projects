@@ -18,7 +18,7 @@ recipeIngredientEl.innerHTML=`
 `
 
  recipeLinkEl=document.createElement("a")
-recipeLinkEl.href=recipe.sourceUrl
+recipeLinkEl.href=recipe.spoonacularSourceUrl
 recipeLinkEl.innerText="View Recipe"
 
 
