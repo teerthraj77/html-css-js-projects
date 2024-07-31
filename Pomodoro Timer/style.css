@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  background-color: antiquewhite;
+}
+
+.continer{
+  margin:  0 auto;
+  max-width: 400px;
+  /* max-height: 500px; */
+  margin-top: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(108, 148, 129);
+  padding: 10px;
+  text-align: center;
+}
+h1{
+color: white;
+margin-bottom: 60px;
+}
+p{
+  font-size: 70px;
+ margin-bottom: 60px;
+}
+button{
+  background-color: rgb(207, 205, 202);
+  padding: 8px;
+  margin: 6px;
+  border: none;
+  width: 80px;
+  cursor: pointer;
+  transition: background-color .4s ease;
+}
+
+button:hover{
+  background-color: rgb(38, 38, 134);
+}
+
+
+#start {
+  background-color: red;
+  color: aliceblue;
+} 
+#stop{
+  background-color: green;
+  color: aliceblue;
+}
+#rest{
+  background-color: rgb(233, 227, 227);
+  color: rgb(8, 8, 8);
+}
