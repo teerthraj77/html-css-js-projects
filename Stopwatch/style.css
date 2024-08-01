@@ -1,0 +1,41 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+body{
+  background-color: bisque;
+}
+.container{
+  margin: 0px auto;
+  max-width: 340px;
+  margin-top: 8rem;
+
+  
+}
+
+p{
+  font-size: 6rem;
+}
+.buttons{
+ text-align: center;
+ margin-top: 3rem;
+ margin-left: 5px;
+ background-color: rgb(139, 43, 43);
+
+}
+button{
+  margin: 20px;
+  font-weight: bold;
+  font-size:20px;
+  padding: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(241, 155, 50);
+  cursor: pointer;
+  transition: background-color .4s ease;
+  color: white;
+}
+button:hover{
+  background-color: aqua;
+}
