@@ -1,0 +1,117 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#search-input{
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  border-radius: 6px;
+  font-size: 20px;
+  color: rgb(48, 48, 43);
+}
+#search-button{
+  padding: 10px 20px;
+  background-color: aquamarine;
+  color: rgb(58, 56, 55);
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  border-radius: 6px;
+  margin-left: 10px;
+  transition:  background-color .4s ease ;
+}
+#search-button:hover{
+  background-color: rgb(158, 194, 194);
+  color: rgb(204, 61, 36);
+}
+.search-results{
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+.search-result{
+margin-bottom: 60px;
+width: 30%;
+border-radius: 5px;
+box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+overflow:  hidden;
+}
+.search-result:hover img{
+  transform: scale(1.08);
+}
+.search-result img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform .4s ease-in-out;
+  cursor: pointer;
+}
+.search-result a{
+  padding: 10px;
+  display: block;
+  color: rgb(82, 82, 45);
+  text-decoration: none;
+  transition: background-color .4s ease-in-out;
+
+}
+.search-result:hover a{
+  background-color: rgb(131, 130, 163);
+  color: aliceblue;
+}
+#show-more{
+  background-color: rgb(144, 144, 228);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color .4s ease-in-out;
+  display: none;
+}
+#show-more:hover{
+  background-color: rgb(158, 194, 194);
+}
+@media screen and (max-width:768px) {
+  .search-result{
+    width: 45%;
+   
+  }
+  
+}
+@media screen and (max-width:768px) {
+  .search-result{
+    width: 100%;
+   
+  }
+  form{
+  flex-direction: column;
+  }
+  #search-input{
+    margin-bottom: 20px;
+   width: 80%;
+  }
+}
